@@ -24,7 +24,7 @@ router.get('/createToken', function(req, res, next) {
         process.env.TOKEN_KEY, {
             expiresIn: "2h",
         }
-    );
+    ); 
     console.log("TOKEN: " + token);
     data = {token: token,
     message: `Successful execution of ${req.originalUrl}`}
